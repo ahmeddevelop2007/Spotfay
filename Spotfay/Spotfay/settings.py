@@ -28,8 +28,6 @@ SECRET_KEY = 'django-insecure-8)-b_we1cdf@1dnx+kwo11tuo%g+tj0s&kfqwbyf8ero_1)@kj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -132,7 +130,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'creators/static'),
     os.path.join(BASE_DIR, 'brands/static'),
-    os.path.join(BASE_DIR, 'authentications/static')
+    os.path.join(BASE_DIR, 'Authentications/static')
 ]
 MEDIA_URL = '/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -175,6 +173,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_SSL_KEYFILE = None  # Set this if you have a client certificate
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SITE_LINK = 'www.spotfaylink.com'
